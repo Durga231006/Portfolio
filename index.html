@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My  Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-container">
+      <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+      <ul id="nav-menu">
+        <li><a href="#" onclick="showPage('home', this)" class="active">Home</a></li>
+        <li><a href="#" onclick="showPage('about', this)">About</a></li>
+        <li><a href="#" onclick="showPage('projects', this)">Projects</a></li>
+        <li><a href="#" onclick="showPage('contact', this)">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="page active">
+    <h1>Hi, I'm Durga A</h1>
+    <p>Front-End Developer</p>
+    <p>
+  I craft beautiful, responsive websites with clean code and creative flair.I specialize in delivering high-quality solutions that combine creativity, precision, and purpose. Whether it's designing user-friendly interfaces, developing robust applications, or crafting compelling content, I focus on results that make a real impact. Feel free to explore my projects and reach out
+    </p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="page">
+    <h1>About Me</h1>
+    <p>I'm a creative and detail-oriented front-end developer with a passion for crafting visually stunning and user-friendly web experiences. With a strong foundation in HTML, CSS, JavaScript, and frameworks like React, I love bringing ideas to life through clean code and thoughtful design. Whether it's building responsive layouts, optimizing performance, or adding subtle animations that delight users, I thrive on turning complex problems into elegant solutions. Beyond the screen, I’m constantly exploring new tools and trends to stay ahead in the ever-evolving world of web development.</p>
+    
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="page">
+    <h1>Projects</h1>
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>
+        This portfolio highlights a selection of my front-end development work, where I’ve combined clean code with creative design to build responsive, user-friendly interfaces. Each project showcases my skills in HTML, CSS, JavaScript, and React, along with a focus on performance, accessibility, and modern UI trends.</p>
+      </p>
+      <a href="https://github.com/Durga231006/portfolio" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="page">
+    <h1>Contact Me</h1>
+    <p>Email: durgaarumugam122@gmail.com</p>
+    <p><a href="https://www.linkedin.com/in/durga-a-467b88342" target="_blank"> View My LinkedIn Profile</a></p>
+  </section>
+<script src="script.js"></script>
+</body>
+</html>
+

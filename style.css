@@ -1,0 +1,155 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      font-style: oblique;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      color: #333;
+      transition: background 0.5s ease;
+      font-size: 18px;
+    }
+
+    
+nav {
+      background: #fff;
+      padding: 1em 2em ;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      font-size: 25px;
+    }
+
+.nav-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+.nav-toggle {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: #ff6f61;
+    }
+
+ ul {
+      display: flex;
+      list-style: none;
+      gap: 2em;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ff6f61;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #e82020;
+      
+    }
+
+   
+    .page {
+      display: none;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeIn 0.5s ease-in-out;
+      font-size: 25px;
+    }
+
+    .page.active {
+      display: block;
+      color: #e82020;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      align-items: center;
+    }
+
+    p {
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto 20px;
+      
+    }
+    .page a{
+      text-decoration: none;
+    }
+
+   
+    .project-card {
+      background: #fff;
+      margin: 1em auto;
+      padding: 1.5em;
+      border-radius: 10px;
+      max-width: 600px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .project-card h3 {
+      color: #e82020;
+      margin-bottom: 10px;
+      text-align: center;
+      
+    }
+    .project-card a{
+      display: inline-block;
+      margin-top: 10px;
+      
+    }
+
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* RESPONSIVE STYLES */
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: block;
+        align-self: flex-end;
+      }
+
+      ul {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        width: 100%;
+        background-color: #fff;
+        padding: 1em 0;
+        margin-top: 10px;
+      }
+
+      ul.active {
+        display: flex;
+      }
+
+      ul li {
+        margin: 0.5em 0;
+      }
+
+    }
