@@ -9,7 +9,7 @@ A personal portfolio website to showcase my projects, skills, experience, and co
 - JavaScript
   
 
-* Features
+*Features
 
 - About Me section
 - Projects portfolio
